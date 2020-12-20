@@ -206,7 +206,7 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="Add Cutiepii to your group",
+                            text="Add Cherry to your group",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username))
                     ],
@@ -216,12 +216,12 @@ def start(update: Update, context: CallbackContext):
                              url=f"https://t.me/{SUPPORT_CHAT}"),
                          InlineKeyboardButton(
                              text="Updates Channel",
-                             url="https://t.me/Techno_Ocean")
+                             url="https://t.me/FlixBots")
                      ],
                      [
                          InlineKeyboardButton(
                              text="Source Code (Licensed Under GPLv3)",
-                             url="https://github.com/Rajkumar-27/CutiepiiRobot")
+                             url="https://t.me/NoSourceCode")
                      ]]))
     else:
         update.effective_message.reply_text(
