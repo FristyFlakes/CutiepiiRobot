@@ -195,16 +195,16 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="Add Cherry to your group",
+                            text="Add Cherry To Your Group ➕",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username))
                     ],
                      [
                          InlineKeyboardButton(
-                             text="Support Chat",
+                             text="Support Chat 🗣",
                              url=f"https://t.me/{SUPPORT_CHAT}"),
                          InlineKeyboardButton(
-                             text="Updates Channel",
+                             text="Updates Channel 📢",
                              url="https://t.me/FlixBots")
                      ],
                      [
