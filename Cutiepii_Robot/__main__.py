@@ -51,16 +51,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hi {}, my name is {}!
-
-I am an Anime themed advance group management bot with a lot of Special Features.
-
-FREE PREMIUM ANDROID APPLICATIONS ON [MODZILLA](https://t.me/joinchat/AAAAAE-44AkxSyqIMj1tdQ)
-
-You can find my list of available commands with /help.
-
-Maintained by [Iggie](http://t.me/Iggie)
-
+Hello {}, <b>My Name Is {} ♥,\n\nI'm An Anine Themed Advanced Group Management Bot With A Lot Of Special Features.\n\nYou Can Find My List Of Available Commands By Clicking</b> /help Command 🛠.\n\n<b>Bot Creator 🙎 -</b> [@Iggie](https://t.me/iggie]\n\n<b>Join Our Premium Android Applications Channel 📲</b> [@Modzilla](https://t.me/joinchat/AAAAAE-44AkxSyqIMj1tdQ)
 """
 
 HELP_STRINGS = """
