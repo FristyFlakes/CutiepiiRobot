@@ -55,17 +55,17 @@ Hi {}, my name is {}!
 
 I am an Anime themed advance group management bot with a lot of Special Features.
 
-FREE MOVIES AND SERIES ON [HINDI K DRAMA](https://Hindikdrama.xyz)
+FREE PREMIUM ANDROID APPLICATIONS ON [MODZILLA](https://t.me/joinchat/AAAAAE-44AkxSyqIMj1tdQ)
 
 You can find my list of available commands with /help.
 
-Maintained by [Rajkumar](http://t.me/Awesome_RJ)
+Maintained by [Iggie](http://t.me/Iggie)
 
 """
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
-I'm a heroine For Fun and help admins manage their groups with Cutiepii! Have a look at the following for an idea of some of \
+I'm a heroine For Fun and help admins manage their groups with Cherry! Have a look at the following for an idea of some of \
 the things I can help you with.-
 
 *Main* commands available:
@@ -83,12 +83,12 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-SAITAMA_IMG = "https://telegra.ph/file/ac68ce78fd9c723304ada.jpg"
+SAITAMA_IMG = "https://telegra.ph/file/ae7b30ee6f07858813240.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
-Cutiepii is hosted on one of Kaizoku's Servers and doesn't require any donations as of now but \
+Cherry is hosted on one of Kaizoku's Servers and doesn't require any donations as of now but \
 You can donate to the original writer of the Base code, Rajkumar
-There are two ways of supporting him; [PayPal](paypal.me/wadwialatech), or [Ko-Fi](ko-fi.com/Rajkumar)."""
+There are two ways of supporting him; [PayPal](paypal.me/premiumbarn)."""
 
 IMPORTED = {}
 MIGRATEABLE = []
