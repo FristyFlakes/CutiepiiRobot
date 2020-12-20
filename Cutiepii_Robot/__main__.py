@@ -63,13 +63,11 @@ HELP_STRINGS = """
  *• /settings:*
  *• In PM: Will Send You Your Settings For All Supported Modules.*
  *• In A Group: Will Redirect You To PM, With All That Chat's Settings.*
-
-
 {}
-And the following:
+And The Following:
 """.format(
     dispatcher.bot.first_name, ""
-    if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
+    if not ALLOW_EXCL else "\nAll Commands Can Either Be Used With / Or !.\n")
 
 SAITAMA_IMG = "https://telegra.ph/file/ae7b30ee6f07858813240.jpg"
 
