@@ -207,7 +207,7 @@ def start(update: Update, context: CallbackContext):
                      [
                          InlineKeyboardButton(
                              text="Source Code (Licensed Under GPLv3)",
-                             url="https://t.me/NoSourceCode")
+                             url="https://github.com/Rajkumar-27/CutiepiiRobot")
                      ]]))
     else:
         update.effective_message.reply_text(
