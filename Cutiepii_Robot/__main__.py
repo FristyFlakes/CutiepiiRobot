@@ -6,7 +6,7 @@ from typing import Optional
 
 from Cutiepii_Robot import (ALLOW_EXCL, CERT_PATH, DONATION_LINK, LOGGER,
                           OWNER_ID, PORT, SUPPORT_CHAT, TOKEN, URL, WEBHOOK, SUPPORT_CHAT,
-                          dispatcher, StartTime, telethn, updater)
+                          dispatcher, StartTime, telethn, updater, pgram)
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
 from Cutiepii_Robot.modules import ALL_MODULES
@@ -50,31 +50,46 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-PM_START_TEXT = """Hello {}, *My Name Is {} ♥*,\n\n*I Am An Anime Themed Advanced Group Management Bot With A Lot Of Special Features*.\n\n*You Can Find My List Of Available Commands By Clicking /help Command 🛠.*\n\n*Join Our Premium Android Applications Channel 📲* [@Modzilla](https://t.me/joinchat/AAAAAE-44AkxSyqIMj1tdQ).\n\n*Bot Creator 🙎 -* [@Iggie](https://t.me/iggie]."""
+PM_START_TEXT = """
+Hi {}, my name is {}!
+
+I am an Anime themed advance group management bot with a lot of Special Features.
+
+FREE MOVIES AND SERIES ON [HINDI K DRAMA](https://Hindikdrama.xyz)
+
+You can find my list of available commands with /help.
+
+Maintained by [Rajkumar](http://t.me/Awesome_RJ)
+
+"""
 
 HELP_STRINGS = """
-*Hey There! My Name Is* *{}*.
-*I Am Anime Themed Admin That Manages Groups For Owners! Have A Look At The Following Guide For An Idea Of The Things I Can Help You With.*
+Hey there! My name is *{}*.
+I'm a heroine For Fun and help admins manage their groups with Cutiepii! Have a look at the following for an idea of some of \
+the things I can help you with.-
 
-*Main Commands Available:*
- *• /help: PM's You This Message.*
- *• /help <Module Name>: PM's You Info About That Module.*
- *• /donate: Information On How To Donate To The Creator!*
- *• /settings:*
- *• In PM: Will Send You Your Settings For All Supported Modules.*
- *• In A Group: Will Redirect You To PM, With All That Chat's Settings.*
+*Main* commands available:
+ • /help: PM's you this message.
+ • /help <module name>: PM's you info about that module.
+ • /donate: information on how to donate!
+ • /settings:
+   • in PM: will send you your settings for all supported modules.
+   • in a group: will redirect you to pm, with all that chat's settings.
+
+
 {}
-And The Following:
+And the following:
 """.format(
     dispatcher.bot.first_name, ""
-    if not ALLOW_EXCL else "\nAll Commands Can Either Be Used With / Or !.\n")
+    if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-SAITAMA_IMG = "https://telegra.ph/file/ae7b30ee6f07858813240.jpg"
+SAITAMA_IMG = "https://telegra.ph/file/d31755c8e0245be16c4f5.png"
+CUTIEPINGIMG = "https://telegra.ph/file/213a05719a33e0e504cf9.gif"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
-Cherry is hosted on one of Kaizoku's Servers and doesn't require any donations as of now but \
+Cutiepii is hosted on one of Kaizoku's Servers and doesn't require any donations as of now but \
 You can donate to the original writer of the Base code, Rajkumar
-There are two ways of supporting him; [PayPal](paypal.me/premiumbarn)."""
+There are two ways of supporting him; [PayPal](paypal.me/wadwialatech), or [Ko-Fi](ko-fi.com/Rajkumar)."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -192,17 +207,17 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="Add Cherry To Your Group ➕",
+                            text="Add Cutiepii to your group",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username))
                     ],
                      [
                          InlineKeyboardButton(
-                             text="Support Chat 🗣",
+                             text="Support Chat",
                              url=f"https://t.me/{SUPPORT_CHAT}"),
                          InlineKeyboardButton(
-                             text="Updates Channel 📢",
-                             url="https://t.me/FlixBots")
+                             text="Updates Channel",
+                             url="https://t.me/Techno_Ocean")
                      ],
                      [
                          InlineKeyboardButton(
@@ -210,11 +225,12 @@ def start(update: Update, context: CallbackContext):
                              url="https://github.com/Rajkumar-27/CutiepiiRobot")
                      ]]))
     else:
+        update.effective_message.reply_video(
+                CUTIEPINGIMG)
         update.effective_message.reply_text(
-            "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>"
-            .format(uptime),
+            "Cutie Cutie! \n<b>Queen in command! since:</b> <code>{}</code>".format(uptime),
             parse_mode=ParseMode.HTML)
-
+                    
 
 # for test purposes
 def error_callback(update: Update, context: CallbackContext):
@@ -586,4 +602,5 @@ def main():
 if __name__ == '__main__':
     LOGGER.info("Successfully loaded modules: " + str(ALL_MODULES))
     telethn.start(bot_token=TOKEN)
+    pgram.start()
     main()
