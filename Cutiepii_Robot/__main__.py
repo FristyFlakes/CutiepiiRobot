@@ -50,46 +50,31 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-PM_START_TEXT = """
-Hi {}, my name is {}!
-
-I am an Anime themed advance group management bot with a lot of Special Features.
-
-FREE MOVIES AND SERIES ON [HINDI K DRAMA](https://Hindikdrama.xyz)
-
-You can find my list of available commands with /help.
-
-Maintained by [Rajkumar](http://t.me/Awesome_RJ)
-
-"""
+PM_START_TEXT = """Hello {}, *My Name Is {} ♥*,\n\n*I Am An Anime Themed Advanced Group Management Bot With A Lot Of Special Features*.\n\n*You Can Find My List Of Available Commands By Clicking /help Command 🛠.*\n\n*Join Our Premium Android Applications Channel 📲* [@Modzilla](https://t.me/joinchat/AAAAAE-44AkxSyqIMj1tdQ).\n\n*Bot Creator 🙎 -* [@Iggie](https://t.me/iggie]."""
 
 HELP_STRINGS = """
-Hey there! My name is *{}*.
-I'm a heroine For Fun and help admins manage their groups with Cutiepii! Have a look at the following for an idea of some of \
-the things I can help you with.-
+*Hey There! My Name Is* *{}*.
+*I Am Anime Themed Admin That Manages Groups For Owners! Have A Look At The Following Guide For An Idea Of The Things I Can Help You With.*
 
-*Main* commands available:
- • /help: PM's you this message.
- • /help <module name>: PM's you info about that module.
- • /donate: information on how to donate!
- • /settings:
-   • in PM: will send you your settings for all supported modules.
-   • in a group: will redirect you to pm, with all that chat's settings.
-
-
+*Main Commands Available:*
+ *• /help: PM's You This Message.*
+ *• /help <Module Name>: PM's You Info About That Module.*
+ *• /donate: Information On How To Donate To The Creator!*
+ *• /settings:*
+ *• In PM: Will Send You Your Settings For All Supported Modules.*
+ *• In A Group: Will Redirect You To PM, With All That Chat's Settings.*
 {}
-And the following:
+And The Following:
 """.format(
     dispatcher.bot.first_name, ""
-    if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
+    if not ALLOW_EXCL else "\nAll Commands Can Either Be Used With / Or !.\n")
 
-SAITAMA_IMG = "https://telegra.ph/file/d31755c8e0245be16c4f5.png"
-CUTIEPINGIMG = "https://telegra.ph/file/213a05719a33e0e504cf9.gif"
+SAITAMA_IMG = "https://telegra.ph/file/ae7b30ee6f07858813240.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
-Cutiepii is hosted on one of Kaizoku's Servers and doesn't require any donations as of now but \
+Cherry is hosted on one of Kaizoku's Servers and doesn't require any donations as of now but \
 You can donate to the original writer of the Base code, Rajkumar
-There are two ways of supporting him; [PayPal](paypal.me/wadwialatech), or [Ko-Fi](ko-fi.com/Rajkumar)."""
+There are two ways of supporting him; [PayPal](paypal.me/premiumbarn)."""
 
 IMPORTED = {}
 MIGRATEABLE = []
