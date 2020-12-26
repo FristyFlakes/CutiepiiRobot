@@ -200,7 +200,7 @@ def start(update: Update, context: CallbackContext):
                      [
                          InlineKeyboardButton(
                              text="Support Chat 👤",
-                             url=f"https://t.me/MirrorZone"),
+                             url=f"https://t.me/{SUPPORT_CHAT}"),
                          InlineKeyboardButton(
                              text="Updates Channel 📢",
                              url="https://t.me/FlixBots")
