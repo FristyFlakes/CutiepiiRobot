@@ -70,6 +70,7 @@ And The Following:
     if not ALLOW_EXCL else "\nAll Commands Can Either Be Used With / Or !.\n")
 
 SAITAMA_IMG = "https://telegra.ph/file/ae7b30ee6f07858813240.jpg"
+CUTIEPINGIMG = "https://telegra.ph/file/213a05719a33e0e504cf9.gif"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 Cherry is hosted on one of Kaizoku's Servers and doesn't require any donations as of now but \
@@ -192,17 +193,17 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="Add Cutiepii to your group",
+                            text="Add Cherry To Your Group ➕",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username))
                     ],
                      [
                          InlineKeyboardButton(
-                             text="Support Chat",
-                             url=f"https://t.me/{SUPPORT_CHAT}"),
+                             text="Support Chat 👤",
+                             url=f"https://t.me/MirrorZone"),
                          InlineKeyboardButton(
-                             text="Updates Channel",
-                             url="https://t.me/Techno_Ocean")
+                             text="Updates Channel 📢",
+                             url="https://t.me/FlixBots")
                      ],
                      [
                          InlineKeyboardButton(
