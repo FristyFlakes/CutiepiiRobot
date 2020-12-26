@@ -214,7 +214,7 @@ def start(update: Update, context: CallbackContext):
         update.effective_message.reply_video(
                 CUTIEPINGIMG)
         update.effective_message.reply_text(
-            "Cutie Cutie! \n<b>Queen in command! since:</b> <code>{}</code>".format(uptime),
+            "Cherry Cherry! \n<b>Queen in command! since:</b> <code>{}</code>".format(uptime),
             parse_mode=ParseMode.HTML)
                     
 
@@ -531,7 +531,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Cutie Is Now Available in Bedroom")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Cherry Is Now Available in Bedroom")
         except Unauthorized:
             LOGGER.warning("Bot isnt able to send message to support_chat, go and check!")
         except BadRequest as e:
