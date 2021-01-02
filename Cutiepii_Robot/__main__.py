@@ -69,7 +69,7 @@ And The Following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll Commands Can Either Be Used With / Or !.\n")
 
-SAITAMA_IMG = "https://telegra.ph/file/a66bfd9e9e86f97f76d24.jpg"
+SAITAMA_IMG = "https://telegra.ph/file/d79b6519bfe4dafa8dcd4.jpg"
 CUTIEPINGIMG = "https://telegra.ph/file/213a05719a33e0e504cf9.gif"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
