@@ -51,41 +51,32 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Welcome user: {}, , I am cutest bot: Cutiepii! 
-
-I am an Anime themed advance group management bot with a lot of Special Features.
-
-You can also make my sister. [Cutiepii Repo](https://github.com/Rajkumar-27/CutiepiiRobot)
-
-Use /help to know my abilities [^_^](https://telegra.ph/file/d31755c8e0245be16c4f5.png).
-"""
+Hello {}, *My Name Is {} ♥*,\n\n*I Am An Anime Themed Advanced Group Management Bot With A Lot Of Special Features*.\n\n*You Can Find My List Of Available Commands By Clicking /help Command 🛠.*\n\n*Bot Source Code ➠* [Source Code](https://github.com/Rajkumar-27/CutiepiiRobot)."""
 
 HELP_STRINGS = """
-[Cutie](https://telegra.ph/file/d0441d0d700f54b55c9a1.mp4) at your service.
-I can help you with following functions in managing group.
+*Hey There! My Name Is* *{}*.
+*I Am Anime Themed Admin That Manages Groups For Owners! Have A Look At The Following Guide For An Idea Of The Things I Can Help You With.*
 
-*Main* commands available:
- • /help: PM's you this message.
- • /help <module name>: PM's you info about that module.
- • /donate: information on how to donate!
- • /settings:
-   • in PM: will send you your settings for all supported modules.
-   • in a group: will redirect you to pm, with all that chat's settings.
-
-
+*Main Commands Available:*
+ *• /help: PM's You This Message.*
+ *• /help <Module Name>: PM's You Info About That Module.*
+ *• /donate: Information On How To Donate To The Creator!*
+ *• /settings:*
+ *• In PM: Will Send You Your Settings For All Supported Modules.*
+ *• In A Group: Will Redirect You To PM, With All That Chat's Settings.*
 {}
-And the following:
+And The Following:
 """.format(
     dispatcher.bot.first_name, ""
-    if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
+    if not ALLOW_EXCL else "\nAll Commands Can Either Be Used With / Or !.\n")
 
-SAITAMA_IMG = "https://telegra.ph/file/d31755c8e0245be16c4f5.png"
+SAITAMA_IMG = "https://telegra.ph/file/d79b6519bfe4dafa8dcd4.jpg"
 CUTIEPINGIMG = "https://telegra.ph/file/213a05719a33e0e504cf9.gif"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
-Cutiepii is hosted on one of Kaizoku's Servers and doesn't require any donations as of now but \
+Cherry is hosted on one of Kaizoku's Servers and doesn't require any donations as of now but \
 You can donate to the original writer of the Base code, Rajkumar
-There are two ways of supporting him; [PayPal](paypal.me/wadwialatech), or [Ko-Fi](ko-fi.com/Rajkumar)."""
+There are two ways of supporting him; [PayPal](paypal.me/premiumbarn)."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -203,24 +194,23 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="Add Cutiepii to your group",
+                            text="Add Cherry To Your Group ➕",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username))
                     ],
                      [
                          InlineKeyboardButton(
-                             text="Support Chat",
+                             text="Support Chat 👤",
                              url=f"https://t.me/{SUPPORT_CHAT}"),
                          InlineKeyboardButton(
-                             text="Updates Channel",
-                             url="https://t.me/Techno_Ocean")
-                  
+                             text="Updates Channel 📢",
+                             url="https://t.me/FlixBots")
                      ]]))
     else:
         update.effective_message.reply_video(
                 CUTIEPINGIMG)
         update.effective_message.reply_text(
-            "Cutie Cutie! \n<b>Queen in command! since:</b> <code>{}</code>".format(uptime),
+            "Cherry Cherry! \n<b>Queen in command! since:</b> <code>{}</code>".format(uptime),
             parse_mode=ParseMode.HTML)
                     
 
@@ -537,7 +527,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Cutie Is Now Available in Bedroom")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Cherry Is Now Available in Bedroom")
         except Unauthorized:
             LOGGER.warning("Bot isnt able to send message to support_chat, go and check!")
         except BadRequest as e:
