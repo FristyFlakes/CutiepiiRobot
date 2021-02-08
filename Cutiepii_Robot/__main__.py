@@ -70,8 +70,8 @@ And The Following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll Commands Can Either Be Used With / Or !.\n")
 
-SAITAMA_IMG = "https://telegra.ph/file/d79b6519bfe4dafa8dcd4.jpg"
-CUTIEPINGIMG = "https://telegra.ph/file/213a05719a33e0e504cf9.gif"
+SAITAMA_IMG = "https://telegra.ph/file/4d9fbaa310eff875f78a3.jpg"
+CUTIEPINGIMG = "https://telegra.ph/file/4d9fbaa310eff875f78a3.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 Cherry is hosted on one of Kaizoku's Servers and doesn't require any donations as of now but \
@@ -194,7 +194,7 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="Add Cherry To Your Group ➕",
+                            text="Add Hoshiko To Your Group ➕",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username))
                     ],
@@ -210,7 +210,7 @@ def start(update: Update, context: CallbackContext):
         update.effective_message.reply_video(
                 CUTIEPINGIMG)
         update.effective_message.reply_text(
-            "Cherry Cherry! \n<b>Queen in command! since:</b> <code>{}</code>".format(uptime),
+            "Hoshiko! \n<b>King in command! since:</b> <code>{}</code>".format(uptime),
             parse_mode=ParseMode.HTML)
                     
 
@@ -527,7 +527,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Cherry Is Now Available in Bedroom")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Hoshiko Is Now Available")
         except Unauthorized:
             LOGGER.warning("Bot isnt able to send message to support_chat, go and check!")
         except BadRequest as e:
