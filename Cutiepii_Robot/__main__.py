@@ -51,7 +51,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hello {}, *My Name Is {} ♥*,\n\n*I Am An Anime Themed Advanced Group Management Bot With A Lot Of Special Features*.\n\n*You Can Find My List Of Available Commands By Clicking /help Command 🛠.*\n\n*Bot Source Code ➠* [Source Code](https://github.com/Rajkumar-27/CutiepiiRobot)."""
+Hello {}, *My Name Is {} ♥*,\n\n*I Am An Anime Themed Advanced Group Management Bot With A Lot Of Special Features*.\n\n*You Can Find My List Of Available Commands By Clicking /help Command 🛠.*"""
 
 HELP_STRINGS = """
 *Hey There! My Name Is* *{}*.
@@ -200,11 +200,21 @@ def start(update: Update, context: CallbackContext):
                     ],
                      [
                          InlineKeyboardButton(
-                             text="Support Chat 👤",
+                             text="⚙ Support Bot",
                              url=f"https://t.me/{SUPPORT_CHAT}"),
                          InlineKeyboardButton(
-                             text="Updates Channel 📢",
+                             text="🔊 Updates Channel",
                              url="https://t.me/FlixBots")
+                     ],
+                     [
+                         InlineKeyboardButton(
+                             text="📖 Getting Started Guide",
+                             url="https://t.me/Techno_Ocean/17")
+                     ],
+                     [
+                         InlineKeyboardButton(
+                             text="💾 Source Code.",
+                             url="https://github.com/Rajkumar-27/CutiepiiRobot")
                      ]]))
     else:
         update.effective_message.reply_video(
